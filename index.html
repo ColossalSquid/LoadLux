@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load Luxe</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <!-- country code picker css -->    
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.4/build/css/intlTelInput.css"> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.4/build/js/intlTelInput.min.js"></script> -->
+
+
+<link rel="stylesheet" href="./css/intlTelInput.css">
+<script src="./js/intlTelInput.js"></script>
+<!-- <script>
+  const input = document.querySelector("#mobile");
+  window.intlTelInput(input, {
+    utilsScript: "./js/utils.js"
+  });
+</script> -->
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="navbar">
+                <div class="logo">
+                    <img src="./assets/IMG_1635.PNG" alt="">
+                </div>
+                <nav>
+                    <ul>
+                        <li class="grow"><a href="#">Home</a></li>
+                        <li class="grow"><a href="about.html">About Us</a></li>
+                        <li class="grow"><a href="services.html">Services</a></li>
+                    </ul>
+                </nav>
+                <!-- hamburger menu icon -->
+                <div class="button_container" id="toggle">
+                    <span class="top"></span><span class="middle">
+                    </span><span class="bottom"></span>
+                </div>
+           </div>
+
+           <!-- Hamburger Drop-down Menu -->
+           <div class="overlay" id="overlay">
+            <img class="overlay-menu-logo" src="./assets/IMG_1635.PNG" />
+            <nav class="overlay-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+   
+
+    <section class="hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="./assets/Winter_1.mp4" type="video/mp4">
+            
+        </video>
+
+        <!-- Header Text -->
+        <div class="container">
+            <div class="content">
+                <!-- <h2>Load Luxe</h2> -->
+                <img src="./assets/IMG_1635.PNG" class="logo-img"alt="">
+                <h3>The Luxe Way To Load</h3>
+                <div class="btn-quote-container">
+                    <a href="#" class="btn btn-quote">Request a Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Get a Quote -->
+    <section id="quote">
+        <div class="container">
+            <div class="quote-container">
+                <div class="quote-text-container">
+                    <h2 class="quote-header">Request a Quote</h2>
+                    <p>Fill out the form on the side and our team will contact you as soon as possible</p>
+                </div>
+                <div class="form-container">
+                    <form action="">
+
+                        <div class="input-container">
+                            <div class="input-child">
+                                <label for="first-name">First Name</label>
+                                <input type="text" placeholder="Enter Your First Name"/>
+                            </div>
+                          </div>
+                          <div class="input-container">
+                            <div class="input-child">
+                                <label for="last-name" required>Last Name</label>
+                                <input type="text" placeholder="Enter Your Last Name"/>
+                            </div>
+                          </div>
+                          <div class="input-container">
+                            <div class="input-child">
+                                <label for="email">Email</label>
+                                <input type="text" type="email" placeholder="Enter your email"/>
+                            </div>
+                          </div>
+
+                          <div class="input-container">
+                            <div class="input-child">
+                                <label for="phone">Telephone</label>
+                                <input type="text" type="text" placeholder="Enter Your Phone Number" id="mobile"/>
+                            </div>
+                          </div>
+
+                          <div class="input-container">
+                            <div class="input-child">
+                                <label for="comments">Your Inquiry</label>
+                                <textarea name="comments" id="" placeholder="Tell us in detail what your needs are"></textarea>
+                            </div>
+                          </div> 
+
+                          <!-- Submit button -->
+                          <div class="input-container">
+                            <div class="input-child">
+                                <button class="btn btn-submit-quote">REQUEST</button>
+                            </div>
+                          </div>
+    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="./assets/IMG_1635.PNG" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <!-- <div class="footer-text">
+                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                elit,Lorem ipsum dolor sit amet.</p>
+                            </div> -->
+                            
+                        </div>
+                    </div>
+
+                    <!-- footer info section -->
+                    <div class="footer-cta pt-5 pb-5">
+                        <div class="row">
+                            <!-- <div class="col-xl-4 col-md-4 mb-30">
+                                <div class="single-cta">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div class="cta-text">
+                                        <h4>Find us</h4>
+                                        <span>1010 Avenue, sw 54321, chandigarh</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 mb-30">
+                                <div class="single-cta">
+                                    <i class="fas fa-phone"></i>
+                                    <div class="cta-text">
+                                        <h4>Call us</h4>
+                                        <span>9876543210 0</span>
+                                    </div>
+                                </div>
+                            </div> -->
+                            
+                            <div class="footer-social-icon col-xl-6 col-md-6 col-sm-12  mb-30">
+                                <!-- <span>Follow us</span> -->
+                                <!-- <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a> -->
+                                <a href="#"><i class="fab fa-linkedin linkedin-bg"></i></a>
+                                <a href="#">
+                                    <!-- <i class="fab fa-google-plus-g google-bg"></i> -->
+                                    <i class="fab fa-instagram insta-bg"></i>
+                                </a>
+                            </div>
+
+                            <div class="col-xl-6 col-md-6 mb-30 ">
+                                <div class="single-cta">
+                                    <i class="far fa-envelope-open"></i>
+                                    <div class="cta-text">
+                                        <h4>Mail us</h4>
+                                        <span>info@loadluxe.ca</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-12 col-lg-12 col-md-12 mb-30 mt-5">
+                        <div class="footer-widget">
+                            <!-- <div class="footer-widget-heading mt-lg-0 mt-4 ">
+                                <h3 >Useful Links</h3>
+                            </div> -->
+                            <ul class="lead">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About us</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <!-- <li><a href="#">portfolio</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Latest News</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2024, All Right Reserved | Developed by <a href="https://atlasdev.ir">Atlas Dev</a></p>
+                        </div>
+                    </div>
+                    <!-- <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

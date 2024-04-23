@@ -1,0 +1,207 @@
+@media(max-width: 1070px) {
+    html {
+        font-size: 60%;
+    } 
+
+    .container {
+        padding: 0 60px;
+    }
+} 
+
+@media(max-width: 900px) {
+    html {
+        font-size: 55%;
+    } 
+
+    .container {
+        padding: 0 50px;
+    }
+     
+    /* display the hamburger menu */ 
+    header .button_container {
+        display: block;
+    }
+
+    #navbar nav {
+        flex-direction: column;
+        align-items: flex-start;
+        min-height: 60vh;
+        min-width: 100%;
+        position: fixed;
+        top: 0;
+        right: 100%;
+        background-color: #000;
+        justify-content: center;
+        padding: 3rem;
+        transition: all 0.5s ease-in-out;
+        visibility: hidden;
+    } 
+} 
+
+@media(max-width: 699px){
+    header .button_container {
+        margin-right: 20px;
+    }
+}
+
+@media(max-width: 900px) and (min-width: 700px){
+    header .button_container {
+        margin-right: 30px;
+    }
+}
+
+
+
+/*########### Responsive Quote Form and Heading START #############*/
+
+@media(max-width: 1200px) and (min-width: 700px){
+
+    .quote-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .quote-text-container {
+        width: 80%;
+        margin-top: 40px;
+    } 
+
+
+    .form-container {
+        width: 80%;
+        margin-top: 50px;
+    }
+
+    .input-container{
+        margin-top: 15px;
+    }
+
+    .input-child {
+        align-self: center;
+        width: 80%;
+      } 
+} 
+
+@media(max-width: 699px){
+    .container {
+        padding: 0 20px;
+    }
+
+    .quote-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .quote-text-container {
+        width: 100%;
+        margin-top: 40px;
+    } 
+
+
+    .form-container {
+        width: 100%;
+        margin-top: 50px;
+        padding: 40px 10px;
+    }
+
+    .input-container{
+        margin-bottom: 30px;
+        padding: 0;
+    }
+
+    .input-child {
+        align-self: center;
+        width: 100%;
+      } 
+
+      .btn-submit-quote {
+        width: 100%;
+        height: 40px;
+      }
+}
+/*########### Responsive Quote Form and Heading FINISH #############*/
+
+
+/* ########## HERO SECTION LOGO AND QUOTE BUTTON START ########## */
+
+@media(max-width: 1300px) and (min-width: 900px){
+
+    .logo-img {
+        height: 80px;
+        width:560px;
+    } 
+} 
+
+@media(max-width:899px) and (min-width: 500px){
+    .logo-img {
+        height: 60px;
+        width:448px;
+    } 
+
+   
+    .btn-quote{
+        font-size: 15px;
+        width: 180px;
+        padding: 14px 25px;
+    }
+
+} 
+
+@media(max-width: 499px){
+    .logo-img {
+        height: 58px;
+        width:360px;
+    } 
+
+    .btn-quote{
+        font-size: 12px;
+        width: 150px;
+        padding: 10px 20px;
+    }
+}
+
+/* ########## HERO SECTION LOGO AND QUOTE BUTTON FINISH ########## */
+
+
+
+
+
+/*###### FOOTER RESPONSIVE START ###### */
+@media (max-width: 768px) {
+    .single-cta {
+        margin-top: 40px;
+    } 
+
+    .footer-widget ul {
+        flex-direction: column;
+        list-style: none;
+    }
+    .footer-widget ul li{
+        text-align: start;
+    }
+
+    .single-cta {
+        justify-content: flex-start;
+    }
+
+    .footer-social-icon {
+        justify-content: flex-start;
+    }
+
+    .footer-logo img {
+        max-width: 300px
+    }
+}
+/*###### FOOTER RESPONSIVE FINISH ###### */
+
+
+/* ########## ABOUT US RESPONSIVE START ######### */
+
+@media (max-width: 900px) {
+    
+}
+
+
+/* ########## ABOUT US RESPONSIVE START ######### */ 
