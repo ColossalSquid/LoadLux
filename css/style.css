@@ -408,17 +408,18 @@ nav ul {
 .input-container {
   display: flex;
   flex-direction: column;
+  padding:10px;
+} 
   
-  label {
+
+  .input-container label {
     display: block;
     margin-bottom: 4px;
     color: var(--light-mode-text-color);
     font-size: 16px;
-    /* text-shadow: 0px 2px 1px #65ad6b; */
-    /* font-family: 'Quicksand', sans-serif; */
   }
-  input,
-  textarea {
+
+  .input-container input, textarea {
     width: 100%;
     padding: 5px 10px;
     height: 40px;
@@ -429,21 +430,21 @@ nav ul {
     /* font-family: 'Quicksand', sans-serif; */
     font-size: 17px;
     color: var(--light-mode-text-color);
-    &:focus {
-      outline: solid 2px var(--primary_color);
-      background: var(--white_color);
-    }
   } 
 
+  .input-container input:focus, textarea:focus {
+    outline: solid 2px var(--primary_color);
+      background: var(--white_color);
+  }
 
-  textarea {
+
+  .input-container textarea {
     height: 122px;
     padding: 15px 10px;
     resize: none;
     
   }
-  padding:10px;
-} 
+  
 
 .input-container:has(input:focus, textarea:focus) label{
   color: var(--strong-primary-color);
@@ -619,10 +620,14 @@ justify-content: center; */
 width:100%;
 font-size: 1.7rem;
 margin-bottom: 12px;
-a {
-  text-decoration: none;
 }
+
+.footer-widget ul li a {
+  text-decoration: none; 
 }
+
+
+
 .footer-widget ul li a:hover{
 color: var(--strong-primary-color);
 }
@@ -723,21 +728,19 @@ color: #878787;
   border-radius: 10px;
   box-shadow: 0 20px 40px -14px rgba(0,0,0,0.6);
   transition: transform 0.5s;
-  -webkit-transition: transform 0.5s;
-  &:hover {
-    cursor: pointer;
+  -webkit-transition: transform 0.5s ease-in-out;
+} 
+
+.about-card:hover {
+ cursor: pointer;
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
-    .about-card-img {
-      opacity: 1;
-    }
-  }
 }
+
 
 .about-card-img {
   width: 30%;
-  border-radius: 2%;
-  
+  border-radius: 2%;  
 } 
 
 .about-card i {
@@ -811,9 +814,13 @@ color: #878787;
   box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
 }
 
+.card-custom h4 {
+  font-family: var(--montserrat);
+}
+
 .card-custom-img {
-  height: 300px;
-  min-height: 300px;
+  height: 200px;
+  min-height: 200px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -848,6 +855,18 @@ color: #878787;
   left: 1.25rem;
   width: 100px;
   height: 100px;
+}
+
+.card-footer a{
+  display: block; 
+  text-align: center;
+  background-color: var(--primary_color); 
+  color: black; 
+}
+
+.card-footer a:hover {
+  background-color: var(--strong-primary-color); 
+  color: white
 }
 
 
