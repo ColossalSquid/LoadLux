@@ -53,6 +53,6 @@ const input = document.querySelector("#mobile");
     useFullscreenPopup: false,
     countrySearch: true,
     // autoPlaceholder: "aggressive", 
-    showSelectedDialCode: true
-    // initialCountry: "auto"  //automatically fetches users ip and displays their flag
+    showSelectedDialCode: true,
+    initialCountry: "auto"  //automatically fetches users ip and displays their flag
   });

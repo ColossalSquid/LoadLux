@@ -502,14 +502,22 @@ border-bottom: 1px solid var(--strong-primary-color);
 
 .single-cta i {
 color: var(--strong-primary-color);
-font-size: 30px;
+font-size: 3.5rem;
 float: left;
 margin-top: 8px;
 }
 .cta-text {
 padding-left: 15px;
 display: inline-block;
+font-size: 2rem;
 }
+.cta-text a {
+  text-decoration: none;
+} 
+.cta-text a:hover span{
+  color: var(--strong-primary-color);
+} 
+
 .cta-text h4 {
 color: var(--light-mode-text-color);
 font-size: 20px;
@@ -517,8 +525,8 @@ font-weight: 600;
 margin-bottom: 2px;
 }
 .cta-text span {
-color: #757575;
-font-size: 15px;
+  font-size: 1.5rem;
+  color: var(--light-mode-text-color);
 }
 .footer-content {
 position: relative;
@@ -633,8 +641,9 @@ margin-bottom: 12px;
 color: var(--strong-primary-color);
 }
 .footer-widget ul li a {
-color: #878787;
+color: var(--light-mode-text-color);
 text-transform: capitalize;
+font-weight: 400;
 }
 .subscribe-form {
 position: relative;
@@ -708,18 +717,17 @@ color: #878787;
   
 } 
 
-#about-us  h1{
-  margin-top: 200px;
-  margin-bottom: 100px;
+#about-us  h2{
+  width: 100%;
+  display: block;
   font-size: 3rem;
   text-align: center;
-  font-family: "poppins";
+  margin: 200px 0 100px;
+  padding: 0 20px;
   color: var(--strong-primary-color);
+  line-height: 1.3em;
 }
 
-/* .first-card {
-  margin-top: 140px;
-} */
 
 .about-card {
   display: flex;
@@ -767,16 +775,15 @@ color: #878787;
 .about-text-container h3 {
   font-size: 2.5rem;
   color: var(--strong-primary-color);
-  font-family: var(--montserrat);
   font-weight: 700;
 }
 
 .about-text-container p {
-  font-size: 1.4rem;
+  font-size: 1.45rem;
   line-height: 2.5rem;
   font-weight: 400;
   font-style: normal;
-  font-family: var(--montserrat);
+  
 }
 
 
@@ -819,15 +826,8 @@ color: #878787;
   margin: 200px 0 100px;
   padding: 0 20px;
   color: var(--strong-primary-color);
+  line-height: 1.3em;
 }
-
-/* #services {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #36454f;
-} */
 
 .services-cards-container {
   position: relative;
@@ -849,10 +849,10 @@ color: #878787;
   width: 350px;
   max-width: 100%;
   height: 300px;
-  background: #fff;
+  background: #e4e4e4;
   border-radius: 20px;
   transition: 0.5s;
-  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 20px 30px -14px rgba(0,0,0,0.6);
 }
 
   .services-cards-container .service-card:hover {
@@ -934,7 +934,7 @@ color: #878787;
   font-weight: 500;
 }
 
-
+/* For Devices without hover compatibility eg. Mobile and tablets */
 @media(hover: none){
     
     .services-cards-container .service-card {
@@ -989,7 +989,7 @@ color: #878787;
 
 @media (max-width: 480px) {
   .services-cards-container .service-card {
-    width: 240px;
+    width: 260px;
     border-radius: 15px;
   }
 
@@ -998,12 +998,14 @@ color: #878787;
     border-radius: 10px;
   }
 
-  /* .services-cards-container .service-card .service-card-content p {
-    font-size: 0.8rem;
+  .services-cards-container .service-card .service-card-content p {
+    color: var(--light-mode-text-color);
+    font-size: 1.55rem; 
+    font-weight: 500;
   }
 
   .services-cards-container .service-card .service-card-content a {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
   }  */
 
   .services-cards-container .service-card .service-card-content {
@@ -1014,6 +1016,14 @@ color: #878787;
 
   .services-cards-container .service-card .service-card-content a{
     opacity: 0.8;
+  }
+
+  .services-cards-container .service-card .img-box {
+    width: 240px;
+  } 
+
+  .services-cards-container .service-card .service-card-content {
+    top: 120px
   }
 }
 

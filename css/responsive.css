@@ -103,12 +103,13 @@
     .form-container {
         width: 100%;
         margin-top: 50px;
-        padding: 40px 10px;
+        padding: 40px 10px 0;
+        border-radius: 0%;
     }
 
     .input-container{
         margin-bottom: 30px;
-        padding: 0;
+        padding: 0 1rem;
     }
 
     .input-child {
@@ -120,6 +121,14 @@
         width: 100%;
         height: 40px;
       }
+
+      .input-container input, textarea {
+        font-size: 1.6rem;
+      }
+} 
+
+@media (max-width: 575px) {
+
 }
 /*########### Responsive Quote Form and Heading FINISH #############*/
 
@@ -193,6 +202,12 @@
     .footer-logo img {
         max-width: 300px
     }
+
+    .cta-text span{
+        padding-left: 0px;
+        display: inline-block;
+        font-size: 1.8rem;
+        } 
 }
 /*###### FOOTER RESPONSIVE FINISH ###### */
 
