@@ -199,9 +199,26 @@
 
 /* ########## ABOUT US RESPONSIVE START ######### */
 
-@media (max-width: 900px) {
-    
+@media (max-width: 575px) {
+    .about-card {
+        display: flex;
+        flex-direction: column;
+
+    } 
+
+    .about-text-container h3 {
+        text-align: center;
+        padding-top: 1em;
+    } 
+
+    .about-card i {
+        text-align: center;
+        padding: 0;
+    }
 }
 
 
-/* ########### ABOUT US RESPONSIVE START ######### */ 
+
+
+/* ########### ABOUT US RESPONSIVE FINISH ######### */
+

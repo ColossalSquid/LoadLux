@@ -732,10 +732,13 @@ color: #878787;
   -webkit-transition: transform 0.5s ease-in-out;
 } 
 
-.about-card:hover {
- cursor: pointer;
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
+
+@media(hover:hover){
+  .about-card:hover {
+    cursor: pointer;
+       transform: scale(1.1);
+       -webkit-transform: scale(1.1);
+   }
 }
 
 
