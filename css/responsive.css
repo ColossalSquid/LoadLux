@@ -53,6 +53,15 @@
 
 
 /*########### Responsive Quote Form and Heading START #############*/
+@media(max-width: 1200px){
+    .quote-text-container {
+        text-align: center;
+    }
+    .quote-text-container p {
+        width: 100%;
+    }
+}
+
 
 @media(max-width: 1200px) and (min-width: 700px){
 
@@ -65,8 +74,8 @@
     .quote-text-container {
         width: 80%;
         margin-top: 40px;
-    } 
-
+    }
+    
 
     .form-container {
         width: 80%;
@@ -195,9 +204,11 @@
         justify-content: flex-start;
     }
 
-    .footer-social-icon {
-        justify-content: flex-start;
+    .footer-social-container {
+        align-items: flex-start;
+        justify-content: center;
     }
+
 
     .footer-logo img {
         max-width: 300px

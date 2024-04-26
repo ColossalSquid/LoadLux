@@ -54,5 +54,5 @@ const input = document.querySelector("#mobile");
     countrySearch: true,
     // autoPlaceholder: "aggressive", 
     showSelectedDialCode: true,
-    initialCountry: "auto"  //automatically fetches users ip and displays their flag
+    initialCountry: "ca"  
   });
