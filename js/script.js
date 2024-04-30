@@ -4,48 +4,6 @@ $('#toggle').click(function() {
    });
 
 
-//country code picker 
-// -----Country Code Selection
-// $("#mobile_code").intlTelInput({
-// 	initialCountry: "in",
-// 	separateDialCode: true,
-// 	// utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"
-// });
-
-// $(function () {
-//     var code = "+19876543210"; // Assigning value from model.
-//     $('#mobile').val(code);
-//     $('#mobile').intlTelInput({
-//         autoHideDialCode: true,
-//         autoPlaceholder: "ON",
-//         dropdownContainer: document.body,
-//         formatOnDisplay: true,
-//        // hiddenInput: "full_number",
-//         initialCountry: "us",
-//       //  nationalMode: true,
-//         placeholderNumberType: "MOBILE",
-//         preferredCountries: ['us','gb','in'],
-//         separateDialCode: true
-//     });
-//     $('#btn-submit').on('click', function () {
-//         var code = $("#mobile").intlTelInput("getSelectedCountryData").dialCode;
-//         var phoneNumber = $('#mobile').val();
-//       //  $('#mobile').val(code+phoneNumber);
-//         //  alert('Country Code : ' + code + '\nPhone Number : ' + phoneNumber );
-//         document.getElementById("code").innerHTML = code;
-//         document.getElementById("mobile-number").innerHTML = phoneNumber;
-//     });
-// });
-// const input = document.querySelector("#mobile");
-//   window.intlTelInput(input, {
-//     utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.4/build/js/utils.js",
-//   });
-
-//   const input = document.querySelector("#mobile");
-//   window.intlTelInput(input, {
-//     utilsScript: "./utils.js",
-//   });  
-
 //flag picker
 const input = document.querySelector("#mobile");
   window.intlTelInput(input, {
@@ -55,4 +13,55 @@ const input = document.querySelector("#mobile");
     // autoPlaceholder: "aggressive", 
     showSelectedDialCode: true,
     initialCountry: "ca"  
+});
+
+
+//form submission
+var form = document.getElementById("form");
+var modal = document.getElementById("myModal");
+var modalBtn = document.getElementById("modal-button");
+var modalCloseSpan = document.getElementById("close-btn"); 
+
+modalBtn.onclick = function () {
+  modal.style.display = "none";
+}
+
+modalCloseSpan.onclick = function() {
+  modal.style.display = "none";
+}; 
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+async function handleSubmit(event) {
+  event.preventDefault();
+  var status = document.getElementById("my-form-status");
+  var data = new FormData(event.target);
+  fetch(event.target.action, {
+    method: form.method,
+    body: data,
+    headers: {
+      'Accept': 'application/json'
+    }
+  }).then(response => {
+    if (response.ok) {
+      status.innerHTML = "Thanks for your submission!";
+      modal.style.display = "block";
+      form.reset()
+    } else {
+      response.json().then(data => {
+        if (Object.hasOwn(data, 'errors')) {
+          status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+        } else {
+          status.innerHTML = "Oops! There was a problem submitting your form"
+        }
+      })
+    }
+  }).catch(error => {
+    status.innerHTML = "Oops! There was a problem submitting your form"
   });
+}
+form.addEventListener("submit", handleSubmit)

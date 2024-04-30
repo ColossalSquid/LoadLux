@@ -147,14 +147,14 @@
 @media(max-width: 1300px) and (min-width: 900px){
 
     .logo-img {
-        height: 80px;
+        height: 120px;
         width:560px;
     } 
 } 
 
 @media(max-width:899px) and (min-width: 500px){
     .logo-img {
-        height: 60px;
+        height: 95px;
         width:448px;
     } 
 
@@ -169,7 +169,7 @@
 
 @media(max-width: 499px){
     .logo-img {
-        height: 58px;
+        height: 78px;
         width:360px;
     } 
 
