@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HR3TWRDKQD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-HR3TWRDKQD');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Load Luxe</title>
@@ -9,11 +19,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script
-    src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
-    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
-    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="./js/intlTelInput.js"></script>
@@ -38,22 +48,22 @@
                     <span class="top"></span><span class="middle">
                     </span><span class="bottom"></span>
                 </div>
-           </div>
+            </div>
 
-           <!-- Hamburger Drop-down Menu -->
-           <div class="overlay" id="overlay">
-            <img class="overlay-menu-logo" src="./assets/IMG_1635.PNG" />
-            <nav class="overlay-menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                </ul>
-            </nav>
-        </div>
+            <!-- Hamburger Drop-down Menu -->
+            <div class="overlay" id="overlay">
+                <img class="overlay-menu-logo" src="./assets/IMG_1635.PNG" />
+                <nav class="overlay-menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </nav>
+            </div>
     </header>
 
-   
+
 
     <section class="hero">
         <video playsinline muted autoplay loop autobuffer class="hero-video">
@@ -64,7 +74,7 @@
         <div class="container">
             <div class="content">
                 <!-- <h2>Load Luxe</h2> -->
-                <img src="./assets/IMG_1635.PNG" class="logo-img"alt="">
+                <img src="./assets/IMG_1635.PNG" class="logo-img" alt="">
                 <h3>The Luxe Way To Load</h3>
                 <div class="btn-quote-container">
                     <a href="#quote" class="btn btn-quote">Request a Quote</a>
@@ -80,7 +90,8 @@
             <div class="quote-container">
                 <div class="quote-text-container">
                     <h2 class="quote-header">Request a Quote</h2>
-                    <p>Drop us your inquiry here! We'll quickly reach out with a personalized quote <strong>just for you.</strong></p>
+                    <p>Drop us your inquiry here! We'll quickly reach out with a personalized quote <strong>just for
+                            you.</strong></p>
                 </div>
                 <div class="form-container">
                     <form action="https://formspree.io/f/xvoelaor" method="POST" id="form">
@@ -88,44 +99,46 @@
                         <div class="input-container">
                             <div class="input-child">
                                 <label for="first-name">First Name</label>
-                                <input type="text" name="first-name" placeholder="Enter Your First Name" required/>
+                                <input type="text" name="first-name" placeholder="Enter Your First Name" required />
                             </div>
-                          </div>
-                          <div class="input-container">
+                        </div>
+                        <div class="input-container">
                             <div class="input-child">
                                 <label for="last-name">Last Name</label>
-                                <input type="text" name="last-name" placeholder="Enter Your Last Name" required/>
+                                <input type="text" name="last-name" placeholder="Enter Your Last Name" required />
                             </div>
-                          </div>
-                          <div class="input-container">
+                        </div>
+                        <div class="input-container">
                             <div class="input-child">
                                 <label for="email">Email</label>
-                                <input type="email" name="email" type="email" placeholder="Enter your email" required/>
+                                <input type="email" name="email" type="email" placeholder="Enter your email" required />
                             </div>
-                          </div>
+                        </div>
 
-                          <div class="input-container">
+                        <div class="input-container">
                             <div class="input-child">
                                 <label for="phone">Telephone</label>
-                                <input type="tel" name="phone" placeholder="Enter Your Phone Number" id="mobile" required/>
+                                <input type="tel" name="phone" placeholder="Enter Your Phone Number" id="mobile"
+                                    required />
                             </div>
-                          </div>
+                        </div>
 
-                          <div class="input-container">
+                        <div class="input-container">
                             <div class="input-child">
                                 <label for="comments">Your Inquiry</label>
-                                <textarea name="inquiry" placeholder="Tell us in detail what your needs are" required></textarea>
+                                <textarea name="inquiry" placeholder="Tell us in detail what your needs are"
+                                    required></textarea>
                             </div>
-                          </div> 
+                        </div>
 
-                          <!-- Submit button -->
-                          <div class="input-container">
+                        <!-- Submit button -->
+                        <div class="input-container">
                             <div class="input-child">
                                 <button class="btn btn-submit-quote">REQUEST</button>
                             </div>
-                          </div>
+                        </div>
                         <!-- <p id="my-form-status"></p> -->
-                          
+
                     </form>
                 </div>
             </div>
@@ -147,7 +160,7 @@
     <!-- Footer -->
     <footer class="footer-section">
         <div class="container">
-            
+
             <div class="footer-content pt-5 pb-5">
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 mb-50">
@@ -155,8 +168,8 @@
                             <div class="footer-logo">
                                 <img src="./assets/IMG_1635.PNG" class="img-fluid" alt="logo">
                             </div>
-                            
-                            
+
+
                         </div>
                     </div>
 
@@ -166,7 +179,8 @@
                             <div class="footer-social-container col-xl-6 col-md-6 col-sm-12 mb-30">
                                 <h4>Reach Out Anytime</h4>
                                 <div class="footer-social-icon">
-                                    <a href="https://linkedin.com/company/loadluxe"><i class="fab fa-linkedin linkedin-bg"></i></a>
+                                    <a href="https://linkedin.com/company/loadluxe"><i
+                                            class="fab fa-linkedin linkedin-bg"></i></a>
                                     <a href="https://instagram.com/loadluxe">
                                         <i class="fab fa-instagram insta-bg"></i></a>
                                 </div>
@@ -214,4 +228,3 @@
 </body>
 
 </html>
-
